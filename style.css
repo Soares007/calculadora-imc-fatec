@@ -8,12 +8,14 @@ header{
   color: black;
 }
 
-input {
+.replybox {
   height: 50px;
   width: 278px;
 }
 
 .container {
+
+  border: 5px skyblue;
   margin: auto;
   text-align: center;
   position: absolute;

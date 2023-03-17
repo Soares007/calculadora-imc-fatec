@@ -10,22 +10,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1 class="title">Calculadora</h1>
-            <form>
-                <p class="text">Peso</p>
-                <input type="number" id="peso" placeholder="Insira o peso"></input>
-                <span class="medida">Kg</span>
-                <p class="text">Altura</p>
-                <input type="number" id="altura" placeholder="Insira a altura"></input>
-                <span class="medida">Cm</span>
-                <input id='btn_calcular' class='btnCalcular' type="button" value="Calcular">
-                <input type="text" id="result" disabled>
-                <button type="reset" class="btnReset" value="Limpar">Limpar</button>
-            </form>
-        </header>
-    </div>
+    <header>
+        <div class="container">
+        <h1 class="title">Calculadora IMC</h1>
+        <p class="text"><b>Sexo:</b></p>
+        <input type="radio" name="sexo" value="M">Masculino</input>
+        <input type="radio" name="sexo" value="F">Feminino</input>
+        <p class="text">Peso</p>
+        <input class="replybox" type="number" id="peso" placeholder="Insira o peso"></input>
+        <span class="medida">Kg</span>
+        <p class="text">Altura</p>
+        <input class="replybox" type="number" id="altura" placeholder="Insira a altura"></input>
+        <span class="medida">Cm</span>
+
+        <input id='btn_calcular' class='btnCalcular' type="button" value="Calcular">
+        <input type="text" id="result" disabled></input>
+        <button type="reset" class="btnReset" value="Limpar">Limpar</button>
+        </form>
+        </div>
+    </header>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
