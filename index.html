@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <title>CALCULADORA IMC</title>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-        <h1 class="title">Calculadora IMC</h1>
-        <p class="text"><b>Sexo:</b></p>
-        <input type="radio" name="sexo" value="M">Masculino</input>
-        <input type="radio" name="sexo" value="F">Feminino</input>
-        <p class="text">Peso</p>
-        <input class="replybox" type="number" id="peso" placeholder="Insira o peso"></input>
-        <span class="medida">Kg</span>
-        <p class="text">Altura</p>
-        <input class="replybox" type="number" id="altura" placeholder="Insira a altura"></input>
-        <span class="medida">Cm</span>
-
-        <input id='btn_calcular' class='btnCalcular' type="button" value="Calcular">
-        <input type="text" id="result" disabled></input>
-        <button type="reset" class="btnReset" value="Limpar">Limpar</button>
-        </form>
-        </div>
-    </header>
-
+    <div class="card">
+    <h1>CALCULADORA IMC</h1>
+    <form>
+        <h2>Sexo:</h2>
+        <select name="sexo" id="sexo">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <p><h2>Peso:</h2></p>
+        <input class="infos" type="number" id="peso" placeholder="Informe seu peso em kg">
+        <p><h2>Altura:</h2></p>
+        <input class="infos" type="number" id="altura" placeholder="Informe sua altura em cm">
+        <p><input id='btn_calcular' class='botao' type="button" value="Calcular"></p>
+        <br>
+        <p><input id="btn_reset" type="reset" class="botao" value="Limpar"></p>
+        <br>
+        <input type="text" id="result" disabled>  
+          
+    </form>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>

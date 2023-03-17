@@ -1,34 +1,96 @@
-body{
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
   background-color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+.card {
+  padding: 5rem 5rem 5rem 5rem;
+  background-color: whitesmoke;
+  position: absolute;
+  width: 420px;
+  height: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50vh;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+.botao {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  padding: 18px;
+  background-color: rgba(255, 255, 145, 0.951);
+  color: black;
+  cursor: pointer;
+  border: none;
+  transform: translateY(25%) translateX(3%);
+}
+
+select {
+  width: 178px;
+  height: 30px;
+  font-size: 20px;
+  transform: translateX(70%);
+}
+
+h1 {
+  align-items: center;
+  text-align: center;
+  color: orange;
+}
+
+h2 {
   align-items: center;
   text-align: center;
   color: black;
 }
 
-.replybox {
-  height: 50px;
-  width: 278px;
-}
-
-.container {
-
-  border: 5px skyblue;
-  margin: auto;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#peso {
+  border: none;
+  width: 182px;
+  height: 30px;
+  font-size: 20px;
+  transform: translateX(65%);
 }
 
 
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#altura {
+  border: none;
+  width: 182px;
+  height: 30px;
+  font-size: 20px;
+  transform: translateX(65%);
+}
+#result {
+  border: none;
+  width: fit-content;
+  font-size: 20px;
+  padding: 12px;
+  background-color: #d3d3d3;
+  color: black;
+  transform: translateX(25%);
+}
+
+#btn_calcular {
+  width: 330px;
+  transform: translateX(13%);
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+
+#btn_reset {
+  width: 330px;
+  transform: translateX(13%);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
 }
 
 
@@ -38,23 +100,12 @@ form{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.butnCalcular{
- margin: 10px;
- width: fit-content;
- height: fit-content;
-}
-
-.btnReset {
-  margin: 10px;
-  width: fit-content;
-  height: fit-content;
- }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-input[type=number] {
--moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
